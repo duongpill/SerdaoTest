@@ -28,8 +28,8 @@ Just do something to run:
 - To yarn: `yarn install && yarn pod && yarn ios` to run iOS, and `yarn install && yarn android`.
 - To npm: `npm install && npm run pod && npm run ios` to run iOS, and `yarn install && npm run android`.
 
-I also put the old template project in this project with name `LegacySerdaoTest`.
+I also put the old template project in this project with the name `LegacySerdaoTest`.
 
-Please let me know if I need to improve anything, or if that's enough.
+Please let me know if you have any questions or issues.
 
-Thanks for your effort to run and read the project.
+Thanks for your effort in running and reading the project.
