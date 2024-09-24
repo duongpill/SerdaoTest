@@ -20,16 +20,6 @@ const BeneficiaryScreen = ({ navigation }: any) => {
   const [ibanError, setIBANError] = useState('');
   const { createBeneficiary } = useApplicationContext();
 
-  useEffect(() => {
-    setData()
-  }, [])
-
-  const setData = () => {
-    setFirstName('Duong')
-    setLastName('Nguyen')
-    setIban('BE89199774651385')
-  }
-
   const handleBeneficiary = () => {
     if (!validateBeneficiary()){
       return;
