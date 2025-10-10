@@ -1,35 +1,151 @@
-# Introduction
+# SerdaoTest
 
-We're thrilled to have you at this stage of our selection process! This test is designed to assess your skills and approach to problem-solving in a practical scenario. Please carefully follow the instructions below and ensure you read through the entire document. Good luck!
+A React Native app built with **JavaScript / TypeScript**, demonstrating clean structure, API integration, state management, offline caching, and smooth UI/UX.
 
-# Set up the Project
+---
 
-A significant challenge when working with React Native is setting up a complete environment before being able to run the project. We have intentionally omitted these instructions to assess your ability to independently set up said environment.
+## 📖 Table of Contents
 
-# Test
+- [Overview](#overview)  
+- [Features](#features)  
+- [Architecture & Structure](#architecture--structure)  
+- [Tech Stack](#tech-stack)  
+- [Installation & Setup](#installation--setup)  
+- [Configuration](#configuration)  
+- [Start App](#start-app)  
+- [Testing](#testing)  
+- [Screenshots / Demo](#screenshots--demo)  
+- [Contributing](#contributing)  
+- [License](#license)
 
-You will be working on an application that facilitates transactions to beneficiaries. To successfully complete the test, you will need to implement the following features:
- - Introduce a new page to create a beneficiary, including fields for their first name, last name, and IBAN. Additionally, incorporate an IBAN validator to ensure the IBAN's validity.
- - Enable the selection of a beneficiary from a list when making a transaction.
- - Preserve the state of the application so that upon reopening, the list of beneficiaries, transaction history, and balance are retained.
+---
 
-Note: you have free rein in how you want to implement this test, give it you best shot!
+## 🧱 Overview
 
-# Result
+**SerdaoTest** is a sample React Native project intended to showcase:
 
-Please create a new Git repository to store both the test first version and your modifications. Document all the commands needed to install and launch this project, excluding the installation of any external SDKs/platforms, our focus will remain strictly on this project.
+- A clean, modular project architecture  
+- API communication and data caching  
+- Offline support  
+- Modern UI with animations and gestures  
+- State management and testability
 
-We hope that you will enjoy taking this test, best of luck!
+---
 
-# Launch the project
+## ✨ Features
 
-Just do something to run:
+- Fetch data from a remote API  
+- Local caching (e.g. using SQLite, AsyncStorage, or Realm)  
+- Offline-first design  
+- Smooth UI in React Native with animations  
+- Detail screens with transitions  
+- Gesture handling (e.g. drag-to-close)  
+- Pagination or infinite scroll  
+- Tests: unit tests and UI / integration tests  
 
-- To yarn: `yarn install && yarn pod && yarn ios` to run iOS, and `yarn install && yarn android`.
-- To npm: `npm install && npm run pod && npm run ios` to run iOS, and `yarn install && npm run android`.
+---
 
-I also put the old template project in this project with the name `LegacySerdaoTest`.
+## 🏗 Architecture & Structure
 
-Please let me know if you have any questions or issues.
+Here’s a suggested folder structure:
 
-Thanks for your effort in running and reading the project.
+```
+SerdaoTest/
+├── src/
+│   ├── api/             # API client setup, endpoints
+│   ├── components/      # Reusable presentational components
+│   ├── features/        # Feature modules (screens, logic)
+│   ├── navigation/      # React Navigation setup
+│   ├── store/            # State management (Redux, MobX, Context, etc.)
+│   ├── services/        # Data services, caching, local storage
+│   └── utils/           # Helpers, constants
+├── App.js / index.js
+├── package.json
+└── README.md
+```
+
+You can adapt this to match your project.
+
+---
+
+## 🛠 Tech Stack
+
+| Concern       | Library / Tool |
+|---------------|-------------------|
+| UI & Core     | React Native |
+| Navigation     | React Navigation or Native Navigation |
+| HTTP Requests | Axios / Fetch API |
+| Local Storage / Caching | AsyncStorage, SQLite, Realm, or WatermelonDB |
+| State Management | Redux, MobX, Context API, or Recoil |
+| Animation & Gestures | React Native Reanimated, React Native Gesture Handler |
+| Testing       | Jest, React Native Testing Library, Detox (E2E) |
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/duongpill/SerdaoTest.git
+   cd SerdaoTest
+   ```
+
+2. **Install dependencies**  
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Link native dependencies / Pods (iOS)**  
+   ```bash
+   npx pod-install
+   ```
+
+4. **Add configuration**  
+   Create a `.env` file or update `config.js` with your API keys or base URL:  
+   ```dotenv
+   API_BASE_URL=https://api.example.com
+   API_KEY=your_api_key_here
+   ```
+
+---
+
+## ▶️ Start App
+
+- Run on Android:
+  ```bash
+  npx react-native run-android
+  ```
+
+- Run on iOS:
+  ```bash
+  npx react-native run-ios
+  ```
+
+- Start Metro bundler:
+  ```bash
+  npm start
+  # or
+  yarn start
+  ```
+
+---
+
+## 🧪 Testing
+
+- **Unit / Component Tests** with Jest & React Native Testing Library  
+  ```bash
+  npm test
+  # or
+  yarn test
+  ```
+
+- **E2E / Integration Tests** with Detox (if configured):
+  ```bash
+  detox test
+  ```
+
+---
+
+*Built with ❤️ using React Native. Enjoy coding!*  
