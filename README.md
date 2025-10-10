@@ -14,9 +14,6 @@ A React Native app built with **JavaScript / TypeScript**, demonstrating clean s
 - [Configuration](#configuration)  
 - [Start App](#start-app)  
 - [Testing](#testing)  
-- [Screenshots / Demo](#screenshots--demo)  
-- [Contributing](#contributing)  
-- [License](#license)
 
 ---
 
